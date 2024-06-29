@@ -55,7 +55,8 @@ export default function Navbar() {
         const clientIDTOKEN = token.clientId;
         axios.get(`${import.meta.env.VITE_BACKEND_API_URL}/api/login`, { headers: { "Content-Type": "application/json", "ClientID": btoa(String(clientIDTOKEN)), "Credential": btoa(String(credentialTOKEN)) }, withCredentials: true })
             .then(() => {
-                window.location.reload();
+                // window.location.reload();
+                alert("login success")
             }).catch(() => {
                 toast.error("No Internet", { style: { backgroundColor: "red", color: 'white' } });
             });
