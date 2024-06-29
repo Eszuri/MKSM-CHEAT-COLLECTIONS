@@ -38,7 +38,7 @@ function CheatPagesFree({ dataPosition, RawCode, PnachCode }: typeProp) {
             </CheatPage>
         </>
     )
-};
+}
 
 
 const CheatPagesPremium = () => {

@@ -16,7 +16,7 @@ const getAddress = async (characterCode: number) => {
     }
     catch (err: any) {
         toast.error(err);
-    };
+    }
 };
 
 export default getAddress;

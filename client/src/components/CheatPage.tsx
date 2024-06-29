@@ -39,7 +39,7 @@ type warning = {
 
 type Comment = {
     type: string,
-    position: any
+    position: Blob | number | any
 };
 
 type DB = {
