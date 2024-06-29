@@ -2,9 +2,8 @@
   "name": "comment-people-database",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "./src/index.ts",
   "scripts": {
-    "build": "tsc",
     "test": "ts-node -r tsconfig-paths/register index.ts",
     "dev": "nodemon -r tsconfig-paths/register index.ts"
   },
