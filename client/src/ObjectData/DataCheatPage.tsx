@@ -501,7 +501,7 @@ const DataCheatPage = [
             { li_title: 'Save Anywhere', li_Desc: "save dimanapun tanpa harus nyembah patung" },
         ],
         ytvideo: [
-            { url: "?????" },
+            { url: "https://youtu.be/fw6FHGGjSIo" },
         ],
         warning: [
             { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
