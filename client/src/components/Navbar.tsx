@@ -86,7 +86,7 @@ export default function Navbar() {
                 setPicture(data.pp);
                 setLoggin(data.Login);
                 sethideGoogleLogin(true);
-
+                sethideProfil(false);
             }).catch(() => {
                 sethideGoogleLogin(false);
                 toast.error("No Internet", { style: { backgroundColor: "red", color: 'white' } });
@@ -94,7 +94,8 @@ export default function Navbar() {
     }, [])
 
 
-    const [cmdkOpen, setcmdkOpen] = useState(false)
+    const [cmdkOpen, setcmdkOpen] = useState(false);
+    const [hideProfil, sethideProfil] = useState(true);
     return (
         <>
             <Toaster visibleToasts={2} />
@@ -154,7 +155,7 @@ export default function Navbar() {
                                     {profileGoogle.Login ?
                                         <AvatarImage src={profileGoogle.pp} alt="No User Logged" className="cursor-pointer" />
                                         :
-                                        <AvatarImage src={NoProfile} alt="No User Logged" className="cursor-pointer" />
+                                        <AvatarImage src={NoProfile} alt="No User Logged" className={`cursor-pointer`} style={{ visibility: hideProfil ? "hidden" : "visible" }} />
                                     }
                                 </Avatar>
                             </MenubarTrigger>
@@ -164,7 +165,7 @@ export default function Navbar() {
                                         {profileGoogle.Login ?
                                             <AvatarImage src={profileGoogle.pp} alt="No User Logged" className="cursor-pointer w-24 h-24 rounded-full" />
                                             :
-                                            <AvatarImage src={NoProfile} alt="No User Logged" className="cursor-pointer w-24 h-24 rounded-full" />
+                                            <AvatarImage src={NoProfile} alt="No User Logged" className="cursor-pointer w-24 h-24 rounded-full" style={{ visibility: hideProfil ? "hidden" : "visible" }} />
                                         }
                                     </Avatar>
                                     <span className="text-lg font-semibold text-center inline-block w-full overflow-auto">{profileGoogle.name}</span>
