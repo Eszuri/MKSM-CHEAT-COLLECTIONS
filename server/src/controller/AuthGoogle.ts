@@ -27,7 +27,7 @@ const AuthGoogle = async (req: Request, res: Response) => {
                             res.status(200).cookie('auth', enc, { expires: expires, httpOnly: true, secure: true }).json({ name: name, email: email, pictures: picture })
                         })
                 } else {
-                    res.status(200).cookie('auth', enc, { expires: expires, httpOnly: true }).json({ name: name, email: email, pictures: picture })
+                    res.status(200).cookie('auth', enc, { expires: expires, secure: true, httpOnly: true }).json({ name: name, email: email, pictures: picture })
                 }
             })
             .catch(err => {
