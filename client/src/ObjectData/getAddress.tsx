@@ -1,13 +1,13 @@
-import axios, { AxiosResponse } from 'axios';
+import axios from 'axios';
 import { toast } from 'sonner';
 
-type AddressType = {
-    name: String,
-    imgSrc: String,
-    imgAlt: String,
-    Navigate: String,
-    characterCode: Number
-};
+// type AddressType = {
+//     name: String,
+//     imgSrc: String,
+//     imgAlt: String,
+//     Navigate: String,
+//     characterCode: Number
+// };
 
 const getAddress = async (characterCode: number) => {
     try {
