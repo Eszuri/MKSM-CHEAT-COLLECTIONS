@@ -1,7 +1,7 @@
 const CheatCode = {
-    Free: {
-        raw_1:
-            `// exp unlimited
+        Free: {
+                raw_1:
+                        `// exp unlimited
 20C2E224 3B9AC9FF
 
 // health unlimited && max health
@@ -12,8 +12,8 @@ const CheatCode = {
 205CCE30 42C80000`,
 
 
-        pnach_1:
-            `// exp unlimited
+                pnach_1:
+                        `// exp unlimited
 patch=1,EE,20C2E224,extended,3B9AC9FF
 
 // health unlimited && max health
@@ -24,32 +24,32 @@ patch=1,EE,20C29760,extended,00000004 // max health
 patch=1,EE,205CCE30,extended,42C80000`,
 
 
-        raw_2:
-            `// brutality no decreased
+                raw_2:
+                        `// brutality no decreased
 205BB23C 000003E7`,
 
-        pnach_2:
-            `// brutality no decreased
+                pnach_2:
+                        `// brutality no decreased
 patch=1,EE,205BB23C,extended,000003E7`,
 
-        raw_3:
-            `// fatality meter always full
+                raw_3:
+                        `// fatality meter always full
 20C2E238 44960000`,
 
-        pnach_3:
-            `// fatality meter always full
+                pnach_3:
+                        `// fatality meter always full
 patch=1,EE,20C2E238,extended,44960000`,
 
-        raw_4:
-            `// fatality meter level 3
+                raw_4:
+                        `// fatality meter level 3
 20C2E260 00000003`,
 
-        pnach_4:
-            `// fatality meter level 3
+                pnach_4:
+                        `// fatality meter level 3
 patch=1,EE,20C2E260,extended,00000003`,
 
-        raw_5:
-            `// unlock all platform (moves)
+                raw_5:
+                        `// unlock all platform (moves)
 20C29848 00000001 // wall climb
 20C29849 00000001 // wall run
 20C2984A 00000001 // wall jump
@@ -58,8 +58,8 @@ patch=1,EE,20C2E260,extended,00000003`,
 20C2984D 00000001 // swing on poles
 20C2984E 00000001 // fist of ruin`,
 
-        pnach_5:
-            `// unlock all platform (moves)
+                pnach_5:
+                        `// unlock all platform (moves)
 patch=1,EE,20C29848,byte,01 // wall climb
 patch=1,EE,20C29849,byte,01 // wall run
 patch=1,EE,20C2984A,byte,01 // wall jump
@@ -68,136 +68,136 @@ patch=1,EE,20C2984C,byte,01 // long jump
 patch=1,EE,20C2984D,byte,01 // swing on poles
 patch=1,EE,20C2984E,byte,01 // fist of ruin`,
 
-        raw_6:
-            `// Open door to the foundry
+                raw_6:
+                        `// Open door to the foundry
 20C2E04C 00000001
 20C2E048 00000001
 20C2E044 00000001
 20C2E040 00000001
 20C2DF94 00000001`,
 
-        pnach_6:
-            `// Open door to the foundry
+                pnach_6:
+                        `// Open door to the foundry
 patch=1,EE,20C2E04C,byte,01
 patch=1,EE,20C2E048,byte,01
 patch=1,EE,20C2E044,byte,01
 patch=1,EE,20C2E040,byte,01
 patch=1,EE,20C2DF94,byte,01`,
 
-        raw_7:
-            `// fly / infinite jump v1
+                raw_7:
+                        `// fly / infinite jump v1
 D0651F02 0000F7FF // R1
 205E8954 00000000 // fly`,
 
-        pnach_7:
-            `// fly / infinite jump v1
+                pnach_7:
+                        `// fly / infinite jump v1
 patch=1,EE,D0651F02,extended,0000F7FF // R1
 patch=1,EE,205E8954,extended,00000000 // fly`,
 
-        raw_8:
-            `// fly / infinite jump v2
+                raw_8:
+                        `// fly / infinite jump v2
 D0651F02 0000FFBF // D-PAD DOWN
 205E6D70 00000002 // fly`,
 
-        pnach_8:
-            `// fly / infinite jump v2
+                pnach_8:
+                        `// fly / infinite jump v2
 patch=1,EE,D0651F02,extended,0000FFBF // D-PAD DOWN
 patch=1,EE,205E6D70,extended,00000002 // fly`,
 
-        raw_9:
-            `// walking through walls
+                raw_9:
+                        `// walking through walls
 D0651F02 0000FFFD // L3
 2038DFA4 1000001C
 D0651F02 0000FFFF // ini jangan diganti
 2038DFA4 0620001C`,
 
-        pnach_9:
-            `// walking through walls
+                pnach_9:
+                        `// walking through walls
 patch=1,EE,D0651F02,extended,0000FFFD // L3
 patch=1,EE,2038DFA4,extended,1000001C
 patch=1,EE,D0651F02,extended,0000FFFF // ini jangan diganti
 patch=1,EE,2038DFA4,extended,0620001C`,
 
-        raw_10:
-            `// damage modifier
+                raw_10:
+                        `// damage modifier
 // default = 100
 20C08950 000003EB // 1000`,
 
-        pnach_10:
-            `// damage modifier
+                pnach_10:
+                        `// damage modifier
 // default = 100
 patch=1,EE,20C08950,extended,000003EB // 1000`,
 
-        raw_11:
-            `// Shang tsung berubah jadi Shao kahn
+                raw_11:
+                        `// Shang tsung berubah jadi Shao kahn
 20707708 00000040`,
 
-        pnach_11:
-            `// Shang tsung berubah jadi Shao kahn
+                pnach_11:
+                        `// Shang tsung berubah jadi Shao kahn
 patch=1,EE,20707708,byte,40`,
 
-        raw_12:
-            `// character modifier
+                raw_12:
+                        `// character modifier
 205CC680 00000053 // scorpion to baraka
 205CC65C 00000044 // sub-zero to ermac`,
 
-        pnach_12:
-            `// character modifier
+                pnach_12:
+                        `// character modifier
 patch=1,EE,005CC680,byte,53 // scorpion to baraka
 patch=1,EE,005CC65C,byte,44 // sub-zero to ermac`,
 
-        raw_13:
-            `// "Test Your Might"
+                raw_13:
+                        `// "Test Your Might"
 205CCF04 00000064 // durasi 1s
 205CCF0C 42C80000 // bar full`,
 
-        pnach_13:
-            `// "Test Your Might"
+                pnach_13:
+                        `// "Test Your Might"
 patch=1,EE,205CCF04,extended,00000064 // durasi 1s
 patch=1,EE,205CCF0C,extended,42C80000 // bar full`,
 
-        raw_14:
-            `// Brightness Modifier
+                raw_14:
+                        `// Brightness Modifier
 // default min = 0
 // default max = 32
 204F4C54 00000020 // 32`,
 
-        pnach_14:
-            `// Brightness Modifier
+                pnach_14:
+                        `// Brightness Modifier
 // default min = 0
 // default max = 32
 patch=1,EE,204F4C54,extended,00000020 // 32`,
 
-        raw_15:
-            `// super long jump
+                raw_15:
+                        `// super long jump
 // default = 100
 2064DB34 437A0000 // 250`,
 
-        pnach_15:
-            `// super long jump
+                pnach_15:
+                        `// super long jump
 // default = 100
 patch=1,EE,2064DB34,extended,437A0000 // 250`,
 
-        raw_16:
-            `// unbreakable sword
+                raw_16:
+                        `// unbreakable sword
 205D892C 0098967F`,
 
-        pnach_16:
-            `// unbreakable sword
+                pnach_16:
+                        `// unbreakable sword
 patch=1,EE,205D892C,extended,0098967F`,
 
-        raw_17:
-            `// auto high jump (press triangle after jump)
+                raw_17:
+                        `// auto high jump (press triangle after jump)
 // default = 60
 20FCC278 000001F4 // 500`,
 
-        pnach_17:
-            `// auto high jump (press triangle after jump)
+                pnach_17:
+                        `// auto high jump (press triangle after jump)
 // default = 60
 patch=1,EE,20FCC278,extended,000001F4 // 500`,
 
-        raw_18:
-            `// ganti nama karakter
+                raw_18:
+                        `// ganti nama karakter
 // LIU KANG to ASEP
 00C6E500 00000041 // L to A
 00C6E501 00000053 // I to S
@@ -241,8 +241,8 @@ patch=1,EE,20FCC278,extended,000001F4 // 500`,
 00C71106 000000?? R
 00C71107 000000?? O`,
 
-        pnach_18:
-            `// ganti nama karakter
+                pnach_18:
+                        `// ganti nama karakter
 // LIU KANG to ASEP
 patch=1,EE,00C6E500,byte,41 // L to A
 patch=1,EE,00C6E501,byte,53 // I to S
@@ -286,32 +286,191 @@ patch=1,EE,00C71105,byte,?? // E
 patch=1,EE,00C71106,byte,?? // R
 patch=1,EE,00C71107,byte,?? // O`,
 
-        raw_19: `20F3EE38 00000000 // color hit after R1 + X && R1 + Triangle
+                raw_19: `20F3EE38 00000000 // color hit after R1 + X && R1 + Triangle
 20F3EE48 00000000 // color hit after R1 + X && R1 + Triangle
 20F3ED48 00000190 // color R1 + Square
 20F3F13C 000003E8 // snow effect appears three times R1 + Square
 20629AEC 00000000 // color skin 'oni' yellow`,
 
-        pnach_19: `patch=1,EE,20F3EE38,extended,00000000 // color hit after R1 + X && R1 + Triangle
+                pnach_19: `patch=1,EE,20F3EE38,extended,00000000 // color hit after R1 + X && R1 + Triangle
 patch=1,EE,20F3EE48,extended,00000000 // color hit after R1 + X && R1 + Triangle
 patch=1,EE,20F3ED48,extended,00000190 // color R1 + Square
 patch=1,EE,20F3F13C,extended,000003E8 // snow effect appears three times R1 + Square
 patch=1,EE,20629AEC,extended,00000000 // color skin 'oni' yellow`,
 
-        raw_20: `// tidak ada notifikasi tutorial dan karakter tetap bisa bergerak
+                raw_20: `// tidak ada notifikasi tutorial dan karakter tetap bisa bergerak
 205D11F8 00000000 // menghilangkan notifikasi
 205D1228 00000000 // karaker tetap bisa bergerak`,
 
-        pnach_20: `// tidak ada notifikasi tutorial dan karakter tetap bisa bergerak
+                pnach_20: `// tidak ada notifikasi tutorial dan karakter tetap bisa bergerak
 patch=1,EE,005D11F8,byte,00 // menghilangkan notifikasi
 patch=1,EE,005D1228,byte,00 // karaker tetap bisa bergerak`,
 
-        raw_21: `// no requires fatality
+                raw_21: `// no requires fatality
 204AD58C 00000000`,
 
-        pnach_21: `// no requires fatality
+                pnach_21: `// no requires fatality
 patch=1,EE,204AD58C,byte,00`,
-    }
+
+                raw_22: `// press R2
+// Kung lao
+2100A950 00000026
+
+// Liu Kang
+210398D0 00000026
+
+// Subzero 
+20FDF240 00000026
+
+// Scorpion 
+20FFC500 00000026
+
+
+// if you want to use the joker command:
+// Kung lao
+//D0651F02 0000FEEF // L2 + UP ACTIVE
+//2100A950 00000026 // Press R2
+//D0651F02 0000FEFF // L2 DEACTIVE
+//2100A950 000001C2 // Press R2
+
+// Liu Kang
+//D0651F02 0000FEEF // L2 + UP ACTIVE
+//210398D0 00000026 // Press R2
+//D0651F02 0000FEFF // L2 DEACTIVE
+//210398D0 0000010A // Press R2
+
+// Subzero
+//D0651F02 0000FEEF // L2 + UP ACTIVE
+//20FDF240 00000026 // Press R2
+//D0651F02 0000FEFF // L2 DEACTIVE
+//20FDF240 00000A2D // Press R2
+
+// Scorpion
+//D0651F02 0000FEEF // L2 + UP ACTIVE
+//20FFC500 00000026 // Press R2
+//D0651F02 0000FEFF // L2 DEACTIVE
+//20FFC500 0000082C // Press R2`,
+
+
+                pnach_22: `// press R2
+// Kunglao
+patch=1,EE,2100A950,byte,26
+
+// Liu kang
+patch=1,EE,210398D0,byte,26
+
+// Subzero 
+patch=1,EE,20FDF240,byte,26
+
+// Scorpion 
+patch=1,EE,20FFC500,byte,26
+
+
+// if you want to use the joker command:
+// Kung lao
+//patch=1,EE,D0651F02,extended,0000FEEF // L2 + UP ACTIVE
+//patch=1,EE,2100A950,extended,00000026 // Press R2
+//patch=1,EE,D0651F02,extended,0000FEFF // L2 DEACTIVE
+//patch=1,EE,2100A950,extended,000001C2 // Press R2
+
+// Liu Kang
+//patch=1,EE,D0651F02,extended,0000FEEF // L2 + UP ACTIVE
+//patch=1,EE,210398D0,extended,00000026 // Press R2
+//patch=1,EE,D0651F02,extended,0000FEFF // L2 DEACTIVE
+//patch=1,EE,210398D0,extended,0000010A // Press R2
+
+// Subzero
+//patch=1,EE,D0651F02,extended,0000FEEF // L2 + UP ACTIVE
+//patch=1,EE,20FDF240,extended,00000026 // Press R2
+//patch=1,EE,D0651F02,extended,0000FEFF // L2 DEACTIVE
+//patch=1,EE,20FDF240,extended,00000A2D // Press R2
+
+// Scorpion
+//patch=1,EE,D0651F02,extended,0000FEEF // L2 + UP ACTIVE
+//patch=1,EE,20FFC500,extended,00000026 // Press R2
+//patch=1,EE,D0651F02,extended,0000FEFF // L2 DEACTIVE
+//patch=1,EE,20FFC500,extended,0000082C // Press R2`,
+
+
+                raw_23: `// press R2
+// Kung lao
+2100A950 0000000F
+
+// Liu Kang
+210398D0 0000000F
+
+// Subzero 
+20FDF240 0000000F
+
+// Scorpion
+20FFC500 0000000F
+
+
+// if you want to use the joker command:
+// Kung lao
+//D0651F02 0000FEDF // L2 + Right ACTIVE
+//2100A950 0000000F // Press R2
+//D0651F02 0000FEFF // L2 DEACTIVE
+//2100A950 000001C2 // Press R2
+
+// Liu Kang
+//D0651F02 0000FEDF // L2 + Right ACTIVE
+//210398D0 0000000F // Press R2
+//D0651F02 0000FEFF // L2 DEACTIVE
+//210398D0 0000010A // Press R2
+
+// Subzero
+//D0651F02 0000FEDF // L2 + Right ACTIVE
+//20FDF240 0000000F // Press R2
+//D0651F02 0000FEFF // L2 DEACTIVE
+//20FDF240 00000A2D // Press R2
+
+// Scorpion
+//D0651F02 0000FEDF // L2 + Right ACTIVE
+//20FFC500 0000000F // Press R2
+//D0651F02 0000FEFF // L2 DEACTIVE
+//20FFC500 0000082C // Press R2`,
+
+
+                pnach_23: `// press R2
+// Kunglao
+patch=1,EE,2100A950,byte,0F
+
+// Liu kang
+patch=1,EE,210398D0,byte,0F
+
+// Subzero 
+patch=1,EE,20FDF240,byte,0F
+
+// Scorpion 
+patch=1,EE,20FFC500,byte,0F
+
+
+// if you want to use the joker command:
+// Kung lao
+//patch=1,EE,D0651F02,extended,0000FEDF // L2 + Right ACTIVE
+//patch=1,EE,2100A950,extended,0000000F // Press R2
+//patch=1,EE,D0651F02,extended,0000FEFF // L2 DEACTIVE
+//patch=1,EE,2100A950,extended,000001C2 // Press R2
+
+// Liu Kang
+//patch=1,EE,D0651F02,extended,0000FEDF // L2 + Right ACTIVE
+//patch=1,EE,210398D0,extended,0000000F // Press R2
+//patch=1,EE,D0651F02,extended,0000FEFF // L2 DEACTIVE
+//patch=1,EE,210398D0,extended,0000010A // Press R2
+
+// Subzero
+//patch=1,EE,D0651F02,extended,0000FEDF // L2 + Right ACTIVE
+//patch=1,EE,20FDF240,extended,0000000F // Press R2
+//patch=1,EE,D0651F02,extended,0000FEFF // L2 DEACTIVE
+//patch=1,EE,20FDF240,extended,00000A2D // Press R2
+
+// Scorpion
+//patch=1,EE,D0651F02,extended,0000FEDF // L2 + Right ACTIVE
+//patch=1,EE,20FFC500,extended,0000000F // Press R2
+//patch=1,EE,D0651F02,extended,0000FEFF // L2 DEACTIVE
+//patch=1,EE,20FFC500,extended,0000082C // Press R2`,
+        }
 }
 
 export default CheatCode;  

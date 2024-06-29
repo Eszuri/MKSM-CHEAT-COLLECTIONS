@@ -479,6 +479,34 @@ const DataCheatPage = [
             { text: "tidak disarankan bagi pemula" },
         ],
     },
+    {
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code yg menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: 'Wallhack (moves ketika masuk portal)', li_Desc: "terbang dan menembus apapun, bahkan tembok sekalipun" },
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/pZ49U_k9OQc" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
+    },
+    {
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code yg menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: 'Save Anywhere', li_Desc: "save dimanapun tanpa harus nyembah patung" },
+        ],
+        ytvideo: [
+            { url: "?????" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
+    },
 ];
 
 

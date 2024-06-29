@@ -104,6 +104,16 @@ const DataListSideBar = [
         dateAdd: '27 Jun 2024',
         navigate: "/free/21",
     },
+    {
+        title: 'Wallhack (moves ketika masuk portal)',
+        dateAdd: '29 Jun 2024',
+        navigate: "/free/22",
+    },
+    {
+        title: 'Save Anywhere',
+        dateAdd: '29 Jun 2024',
+        navigate: "/free/23",
+    },
 ];
 
 

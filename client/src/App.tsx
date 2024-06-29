@@ -53,6 +53,8 @@ export default function App() {
         <Route path="/free/19" element={<CheatPagesFree dataPosition={18} RawCode={CheatCode.Free.raw_19} PnachCode={CheatCode.Free.pnach_19} />} />
         <Route path="/free/20" element={<CheatPagesFree dataPosition={19} RawCode={CheatCode.Free.raw_20} PnachCode={CheatCode.Free.pnach_20} />} />
         <Route path="/free/21" element={<CheatPagesFree dataPosition={20} RawCode={CheatCode.Free.raw_21} PnachCode={CheatCode.Free.pnach_21} />} />
+        <Route path="/free/22" element={<CheatPagesFree dataPosition={21} RawCode={CheatCode.Free.raw_22} PnachCode={CheatCode.Free.pnach_22} />} />
+        <Route path="/free/23" element={<CheatPagesFree dataPosition={22} RawCode={CheatCode.Free.raw_23} PnachCode={CheatCode.Free.pnach_23} />} />
 
 
         {/* route premium */}
