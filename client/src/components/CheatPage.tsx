@@ -200,7 +200,7 @@ CheatPage.Comment = ({ type, position }: Comment) => {
     const [db, setdb] = useState<DB[]>([]);
 
     function getComment() {
-        axios.get(`${import.meta.env.VITE_BACKEND_API_URL}/api/read-comment`, { headers: { 'price_type': type, 'position_db': position } })
+        axios.get(`${import.meta.env.VITE_BACKEND_API_URL}/api/read-comment/${type}/${position}`)
             .then((result) => {
                 const decode = JSON.parse(atob(result.data.data));
                 setdb(decode);

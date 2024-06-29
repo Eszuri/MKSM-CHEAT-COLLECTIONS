@@ -12,6 +12,6 @@ api.get('/user', GetUser);
 
 
 api.post('/create-comment', createComment);
-api.get('/read-comment', readComment);
+api.get('/read-comment/:type/:position', readComment);
 
 export { api };
