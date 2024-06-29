@@ -1,4 +1,4 @@
-import { api } from '@/controller';
+import { api } from '../controller';
 import { Express } from 'express';
 
 const middlewareRoute = (app: Express) => {

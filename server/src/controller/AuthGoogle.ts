@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import GoogleUserModels from "@/models/GoogleUser";
+import GoogleUserModels from "../models/GoogleUser";
 import { Request, Response } from "express";
 import { OAuth2Client } from "google-auth-library";
 import "dotenv/config"

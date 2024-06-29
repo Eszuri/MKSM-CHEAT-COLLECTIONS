@@ -1,4 +1,4 @@
-import CommentModels from "@/models/Comments";
+import CommentModels from "../models/Comments";
 import { Request, Response } from "express";
 
 function createComment(req: Request, res: Response) {
