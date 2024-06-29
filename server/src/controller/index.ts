@@ -1,8 +1,8 @@
 import express from 'express';
-import { createComment, readComment } from '@/controller/Comment';
-import AuthGoogle from '@/controller/AuthGoogle';
-import GetUser from '@/controller/GetUser';
-import Logout from "@/controller/Logout";
+import { createComment, readComment } from './Comment';
+import AuthGoogle from './AuthGoogle';
+import GetUser from './GetUser';
+import Logout from "./Logout";
 const api = express.Router();
 
 

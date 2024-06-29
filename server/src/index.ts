@@ -1,8 +1,8 @@
 import 'dotenv/config'
 import express from 'express';
 import mongoose from 'mongoose';
-import middleware from './src/middleware/middleware';
-import middlewareRoute from './src/middleware/middlewareRoute';
+import middleware from './middleware/middleware';
+import middlewareRoute from './middleware/middlewareRoute';
 const app = express();
 
 middleware(app);
