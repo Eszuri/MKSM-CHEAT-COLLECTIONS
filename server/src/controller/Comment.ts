@@ -51,12 +51,14 @@ function createComment(req: Request, res: Response) {
 function readComment(req: Request, res: Response) {
     const type = req.params.type;
     const page = req.params.position;
-    // CommentModels.find({ type: type, page: page })
-    //     .then(comment => {
-    //         const toJson = JSON.stringify(comment);
-    //         res.status(200).json({ data: btoa(toJson) })
-    //     })
-    res.status(200).send(type + page)
+    CommentModels.find({ type: type, page: page })
+        .then(comment => {
+            const toJson = JSON.stringify(comment);
+            res.status(200).json({ data: btoa(toJson) })
+        })
+        .catch((err) => {
+            res.status(200).json({ error: err })
+        })
 };
 
 
