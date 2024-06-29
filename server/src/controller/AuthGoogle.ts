@@ -16,18 +16,17 @@ const AuthGoogle = async (req: Request, res: Response) => {
     const payload = verifyAuth.getPayload();
     if (payload) {
         const { email, name, picture } = payload;
-        const expires = new Date();
-        expires.setDate(expires.getDate() + 30);
+        const expires = 30 * 24 * 60 * 60 * 1000;
         GoogleUserModels.findOne({ email: email })
             .then((data) => {
                 const enc = jwt.sign({ name: name, email: email, pictures: picture }, String(process.env.JWT_SECRET_TOKEN), { expiresIn: '30d' });
                 if (data === null) {
                     GoogleUserModels.create({ name: name, email: email, picture: picture })
                         .then(() => {
-                            res.status(200).cookie('auth', enc, { expires: expires, secure: true }).json({ name: name, email: email, pictures: picture })
+                            res.status(200).cookie('auth', enc, { maxAge: expires, secure: true, sameSite: "none", path: "/", httpOnly: true }).json({ name: name, email: email, pictures: picture })
                         })
                 } else {
-                    res.status(200).cookie('auth', enc, { expires: expires, secure: true }).json({ name: name, email: email, pictures: picture })
+                    res.status(200).cookie('auth', enc, { maxAge: expires, secure: true, sameSite: "none", path: "/", httpOnly: true }).json({ name: name, email: email, pictures: picture })
                 }
             })
             .catch(err => {
