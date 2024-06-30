@@ -13,6 +13,7 @@ import { ReloadIcon } from '@radix-ui/react-icons';
 import { userGlobal } from '@/ObjectData/GlobalState';
 import DirectionAwareTabs from './DirectionAwareTabs';
 import YoutubeIcon from '@/icon/YoutubeIcon';
+import DiscordIcon from '@/icon/DiscordIcon';
 
 
 type CheatPage = {
@@ -313,9 +314,13 @@ CheatPage.Comment = ({ type, position }: Comment) => {
 
 CheatPage.footer = () => {
     return (
-        <div className='w-full flex justify-center mt-40 border-t p-3'>
+        <div className='w-full flex justify-center gap-10 mt-40 border-t p-3' title='@LievaL'>
             <Link to={'https://youtube.com/@lieval'} target='_blank' className='inline'>
-                <YoutubeIcon className='scale-[2]' />
+                <YoutubeIcon className='scale-[1.3] hover:opacity-65' />
+            </Link>
+
+            <Link to={'https://discord.gg/us22h2CDXf'} target='_blank' className='inline' title='MKSM Modding By LievaL'>
+                <DiscordIcon fillColor='white' className='scale-[1.3] hover:opacity-65' />
             </Link>
         </div>
     )
