@@ -116,10 +116,10 @@ export default function Navbar() {
                             animate={{ opacity: 1, translateY: 0 }}
                             exit={{ opacity: 0, translateY: -20 }}
                             transition={{ duration: 0.3 }}
-                            className="fixed inset-x-60 max-lg:inset-x-40 max-md:inset-x-20 max-sm:inset-x-3 top-20 z-30 bg-[#1d1f20] shadow-xl rounded-lg overflow-hidden"
+                            className="flex flex-col fixed inset-x-60 h-[85%] max-lg:inset-x-40 max-md:inset-x-20 max-sm:inset-x-3 top-16 z-30 bg-[#1d1f20] shadow-xl rounded-lg overflow-hidden"
                         >
                             <Command.Input className="w-full p-4 outline-none bg-[#1d1f20] placeholder:text-white placeholder:opacity-60 placeholder:font-semibold text-lg border-b border-gray-200 text-white font-bold before:content-['woi'] before:absolute before:top-0 before:text-white" placeholder='🔍  Search Cheats ...' />
-                            <Command.List className="max-h-72 overflow-y-auto">
+                            <Command.List className=" overflow-y-auto">
                                 <Command.Empty className="p-4 text-center text-gray-300 text-lg">No results found.</Command.Empty>
                                 <Command.Group className="p-4 text-white/50">
                                     <span>Free</span>
