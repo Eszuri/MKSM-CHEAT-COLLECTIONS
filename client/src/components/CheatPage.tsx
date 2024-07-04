@@ -4,7 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/shadcn/ui/tabs";
 import CopyIcon from '@/icon/CopyIcon';
 import { toast, Toaster } from 'sonner';
 import { Link } from 'react-router-dom';
-import DataCheatPage_simple, { DataCheatPageProblem } from '@/ObjectData/DataCheatPage';
+import { DataCheatPageProblem } from '@/ObjectData/DataCheatPage';
 import WarningIcon from '@/icon/WarningIcon';
 import AccordionCheatPage from './AccordionCheatPage';
 import NoProfile from '@/icon/NoProfile';
@@ -14,6 +14,7 @@ import { userGlobal } from '@/ObjectData/GlobalState';
 import DirectionAwareTabs from './DirectionAwareTabs';
 import YoutubeIcon from '@/icon/YoutubeIcon';
 import DiscordIcon from '@/icon/DiscordIcon';
+import { DataListFree_simple } from '@/ObjectData/DataListFree';
 
 
 type CheatPage = {
@@ -52,7 +53,7 @@ type DB = {
 }
 
 const CheatPage = ({ position, children }: CheatPage) => {
-    const { deskripsi, title } = DataCheatPage_simple(position);
+    const { deskripsi, title } = DataListFree_simple(position);
     return (
         <>
             <div className="text-white w-full mt-20">
@@ -71,7 +72,7 @@ const CheatPage = ({ position, children }: CheatPage) => {
 
 
 CheatPage.list = ({ position }: list) => {
-    const { cheatList } = DataCheatPage_simple(position)
+    const { cheatList } = DataListFree_simple(position)
     return (
         <>
             <div className="mt-2 grid gap-5 w-80">
@@ -132,7 +133,7 @@ CheatPage.code = ({ CheatCodeRaw, CheatCodePnach }: code) => {
 
 
 CheatPage.yt = ({ position }: typeyt) => {
-    const { ytlink } = DataCheatPage_simple(position);
+    const { ytlink } = DataListFree_simple(position);
     return (
         <>
             <div className='mt-20'>
@@ -150,7 +151,7 @@ CheatPage.yt = ({ position }: typeyt) => {
 
 
 CheatPage.warning = ({ position }: warning) => {
-    const { warning } = DataCheatPage_simple(position)
+    const { warning } = DataListFree_simple(position)
     return (
         <>
             <div className='mt-20'>

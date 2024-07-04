@@ -1,6 +1,6 @@
 import { Command } from 'cmdk';
 import { useNavigate } from "react-router-dom"
-import DataListSideBar from "@/ObjectData/DataListFree";
+import { DataListFree } from "@/ObjectData/DataListFree";
 import NoProfile from "@/Images/noUser.png";
 import { Avatar, AvatarImage } from "@/shadcn/ui/avatar";
 import { Menubar, MenubarContent, MenubarMenu, MenubarTrigger } from "@/shadcn/ui/menubar";
@@ -123,7 +123,7 @@ export default function Navbar() {
                                 <Command.Empty className="p-4 text-center text-gray-300 text-lg">No results found.</Command.Empty>
                                 <Command.Group className="p-4 text-white/50">
                                     <span>Free</span>
-                                    {DataListSideBar.map((list, index) => (
+                                    {DataListFree.map((list, index) => (
                                         <Command.Item key={index} className="font-Amaranth text-lg p-2 h-12 border-2 m-2 my-10 rounded border-white/20 text-white cursor-pointer data-[selected=true]:bg-emerald-700 data-[selected=true]:rounded relative" onSelect={() => { navigate(list.navigate); setcmdkOpen(false); setFetchAgain(!fetchAgain) }}>{list.title} <span className='absolute left-0 -top-5 text-sm font-semibold opacity-45'>{list.dateAdd}</span></Command.Item>
                                     ))}
                                     <span className='block -mb-3 text-yellow-500'>Premium</span>

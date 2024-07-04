@@ -1,130 +1,432 @@
-const DataListSideBar = [
+const DataListFree = [
     {
         title: "Exp 9999+, health and energy bar max + infinite ",
         dateAdd: '27 Jun 2024',
         navigate: "/free/1",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code dasar/basic. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: "experience 999999999", li_Desc: "membeli skill/combo menjadi gratis" },
+            { li_title: "health bar max and infinite", li_Desc: "nyawa kebal/tidak akan mati dan bar nyawa panjang" },
+            { li_title: "energy bar infinite", li_Desc: "memakai skill tidak akan mengurangi energy" }
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/tJsBBgg2CLc" },
+            { url: "https://youtu.be/Xlre_HnNcvc" }
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
     },
     {
         title: "Infinite Duration Brutality",
         dateAdd: '27 Jun 2024',
         navigate: "/free/2",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: "brutality no decreased", li_Desc: "durasi brutality tidak akan habis" }
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/zDyNt1yHAV8" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
     },
     {
         title: "Fatality meter always full",
         dateAdd: '27 Jun 2024',
         navigate: "/free/3",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: "fatality meter always full", li_Desc: "merah merah bar fatality tidak akan berkurang" }
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/W-h5_19snps" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
     },
     {
         title: "Fatality meter always level 3",
         dateAdd: '27 Jun 2024',
         navigate: "/free/4",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: "fatality meter always level 3", li_Desc: "mendapatkan brutality diawal game" }
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/uGCadF6Y6GE" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
     },
     {
         title: "Unlock all platform (moves)",
         dateAdd: '27 Jun 2024',
         navigate: "/free/5",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: "unlock all platform", li_Desc: "mendapatkan semua platform diawal game tanpa harus mengalahkan boss" }
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/6xyhQBQGKJo" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
     },
     {
         title: "Unlock door to the foundry",
         dateAdd: '27 Jun 2024',
         navigate: "/free/6",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: "unlock door to the foundry", li_Desc: "mendapatkan 5 platform tanpa mengalahkan boss" }
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/cqsF64HpfTU" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
     },
     {
         title: "Infinite Jump / fly v1",
         dateAdd: '27 Jun 2024',
         navigate: "/free/7",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: "infinite jump v1", li_Desc: "terbang melayang bahkan bisa infinite jump, bisa untuk semua karakter" }
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/gPK8YOFctPw" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+            { text: "untuk menggunakan cheat ini pastikan sudah memiliki platform double jump" },
+        ],
     },
     {
         title: "Infinite Jump / fly v2",
         dateAdd: '27 Jun 2024',
         navigate: "/free/8",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: "infinite jump v2", li_Desc: "infinite jump lebih mudah tetapi tidak bisa melayang" }
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/2qYc_RdppTU" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+            { text: "jocker command berbeda dari yg diyoutube" },
+            { text: "cara pakai kode diatas, tekan dan tahan tombol 'bawah' lalu spam X" },
+        ],
     },
     {
         title: "Wallhack / walking through walls",
         dateAdd: '27 Jun 2024',
         navigate: "/free/9",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: "wallhack / walking through walls", li_Desc: "berjalan menembus tembok" }
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/JOwwoh3xFLo" },
+        ],
+        warning: [
+            { text: "kode ini boleh dishare bebas, terserah. karena ini bukan buatan saya" },
+            { text: "kode ini didapatkan dari web gamehacking.org dan ada beberapa kode yg saya diedit" },
+            { text: "cara pakai kode diatas, tekan dan tahan tombol 'L3' lalu berjalan bebas" },
+        ],
     },
     {
         title: "Damage Modifier",
         dateAdd: '27 Jun 2024',
         navigate: "/free/10",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: "damage modifier", li_Desc: "edit damage semau antum" }
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/5mpRiCKG0GM" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+            { text: "ada kemungkinan beberapa karakter tidak berfungsi (damage normal)" },
+        ],
     },
     {
         title: "Shang Tsung menjadi shao kahn",
         dateAdd: '27 Jun 2024',
         navigate: "/free/11",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: "shang tsung menjadi shao kahn", li_Desc: "edit shang tsung ketika ganti karakter menjadi shao kahn" }
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/CB9GeUxTZtQ" },
+            { url: "https://youtu.be/fFfVKN-RJqE" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
     },
     {
         title: "subzero & scorpion replace default character",
         dateAdd: '27 Jun 2024',
         navigate: "/free/12",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: "subzero & scorpion character replace", li_Desc: "mengganti karakter bawaan subzero & scorpion" }
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/CcQc9pvs0ws" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+            { text: "untuk lebih jelasnya kalian kunjungi saja youtube saya (link diatas)" },
+        ],
     },
     {
+
         title: '"Test Your Might" hack duration and infinite meter',
         dateAdd: '27 Jun 2024',
         navigate: "/free/13",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: '"Test Your Might" Hack Duration', li_Desc: "durasi 1 detik tetapi unlimited" },
+            { li_title: '"Test Your Might" Hack bar meter', li_Desc: "bar ijo ijo selalu penuh" }
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/rBF4Jc0sm1w" },
+            { url: "https://youtu.be/34199REk5DQ" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
     },
     {
         title: 'Brightness Modifier',
         dateAdd: '27 Jun 2024',
         navigate: "/free/14",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code yg kurang menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: 'Brightness Modifier', li_Desc: "mengatur kecerahan layar dengan cheat code" },
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/tkxBXWyofuU" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+            { text: "untuk lebih jelasnya kalian kunjungi saja youtube saya (link diatas)" },
+            { text: "value diatas 32 bisa merusak mata (cerah bgt)" }
+        ],
     },
     {
         title: 'Super Long Jump',
         dateAdd: '27 Jun 2024',
         navigate: "/free/15",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code yg menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: 'Super Long Jump', li_Desc: "Lompatan R1 + X sangat jauh" },
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/wj_TqKOXI9c" },
+            { url: "https://youtu.be/SNif280LP6g" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+            { text: "untuk lebih jelasnya kalian kunjungi saja youtube saya (link diatas)" },
+        ],
     },
     {
         title: 'Unbreakable Sword',
         dateAdd: '27 Jun 2024',
         navigate: "/free/16",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code yg menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: 'Unbreakable Sword', li_Desc: "Pedang tidak akan hancur" },
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/Z9sN1uKSUqM" },
+            { url: "https://youtu.be/oKfn3pTwGMA" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+            { text: "kode diatas hanya untuk pedang saja" },
+        ],
     },
     {
         title: 'Sub-Zero auto high jump',
         dateAdd: '27 Jun 2024',
         navigate: "/free/17",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code yg menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: 'subzero auto high jump', li_Desc: "terbang tinggi setelah tekan segitiga diudara" },
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/HxNVaL1uVU4" },
+            { url: "https://youtu.be/9Ckl3JPtjzw" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+            { text: "kode diatas hanya BERFUNGSI pada SUB-ZERO saja" },
+        ],
     },
     {
         title: 'Change Name Character',
         dateAdd: '27 Jun 2024',
         navigate: "/free/18",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code yg menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: 'Change Name Character', li_Desc: "ganti nama 4 karakter utama" },
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/1End8xkXhdY" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+            { text: "untuk lebih jelasnya kalian kunjungi saja youtube saya (link diatas)" },
+        ],
     },
     {
         title: 'Change effect color sub-zero',
         dateAdd: '27 Jun 2024',
         navigate: "/free/19",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code yg menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: 'Change effect color sub-zero', li_Desc: "ganti warna skill subzero menjadi kuning" },
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/LfoWYpOjYgw" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
     },
     {
         title: 'Remove Alert Tutorial',
         dateAdd: '27 Jun 2024',
         navigate: "/free/20",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code yg menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: 'Remove Alert Tutorial', li_Desc: "menghilangkan notifikasi tutorial" },
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/JZjkX47X47w" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
     },
     {
         title: 'No Fataity Requires',
         dateAdd: '27 Jun 2024',
         navigate: "/free/21",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code yg menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: 'No Fatality Requires', li_Desc: "menghilangkan alert L1 saat ditempat fatality,etc" },
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/KA2elUTbhEw" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+            { text: "tidak disarankan bagi pemula" },
+        ],
     },
     {
         title: 'Wallhack (moves ketika masuk portal)',
         dateAdd: '29 Jun 2024',
         navigate: "/free/22",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code yg menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: 'Wallhack (moves ketika masuk portal)', li_Desc: "terbang dan menembus apapun, bahkan tembok sekalipun" },
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/pZ49U_k9OQc" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
     },
     {
+
         title: 'Save Anywhere',
         dateAdd: '29 Jun 2024',
         navigate: "/free/23",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code yg menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: 'Save Anywhere', li_Desc: "save dimanapun tanpa harus nyembah patung" },
+        ],
+        ytvideo: [
+            { url: "https://youtu.be/fw6FHGGjSIo" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
     },
 ];
 
-
-const data = (position: number) => {
+const DataListFree_simple = (position: number) => {
     return {
-        title: DataListSideBar[position].title,
-        dateAdd: DataListSideBar[position].dateAdd,
-        navigate: DataListSideBar[position].navigate,
+        title: DataListFree[position].title,
+        dateAdd: DataListFree[position].dateAdd,
+        navigate: DataListFree[position].navigate,
+        deskripsi: DataListFree[position].deskripsi,
+        cheatList: DataListFree[position].cheatList,
+        ytlink: DataListFree[position].ytvideo,
+        warning: DataListFree[position].warning,
     }
+}
 
-};
-
-export { data as DataListSideBar_simple }
-export default DataListSideBar;
+export { DataListFree, DataListFree_simple }

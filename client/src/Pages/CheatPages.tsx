@@ -1,18 +1,17 @@
 import CheatPage from "@/components/CheatPage";
 import Navbar from "@/components/Navbar";
-import { DataListSideBar_simple } from "@/ObjectData/DataListFree";
+import CheatCodeFree from "@/ObjectData/CheatCodeFree";
+import { DataListFree_simple } from "@/ObjectData/DataListFree";
 import { Helmet } from "react-helmet-async";
 
 
 type typeProp = {
     dataPosition: number,
-    RawCode: string,
-    PnachCode: string
 }
 
-function CheatPagesFree({ dataPosition, RawCode, PnachCode }: typeProp) {
+function CheatPagesFree({ dataPosition }: typeProp) {
     const dataArrayPosition = dataPosition;
-    const { title } = DataListSideBar_simple(dataPosition);
+    const { title } = DataListFree_simple(dataPosition);
     return (
         <>
             <Helmet prioritizeSeoTags>
@@ -24,7 +23,7 @@ function CheatPagesFree({ dataPosition, RawCode, PnachCode }: typeProp) {
 
                 <CheatPage.list position={dataArrayPosition} />
 
-                <CheatPage.code CheatCodeRaw={RawCode} CheatCodePnach={PnachCode} />
+                <CheatPage.code CheatCodeRaw={CheatCodeFree[dataArrayPosition].raw} CheatCodePnach={CheatCodeFree[dataArrayPosition].pnach} />
 
                 <CheatPage.yt position={dataArrayPosition} />
 
