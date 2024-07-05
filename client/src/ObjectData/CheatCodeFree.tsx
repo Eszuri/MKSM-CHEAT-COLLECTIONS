@@ -560,6 +560,14 @@ patch=1,EE,20FFC500,byte,0F
 //patch=1,EE,20FFC500,extended,0000000F // Press R2
 //patch=1,EE,D0651F02,extended,0000FEFF // L2 DEACTIVE
 //patch=1,EE,20FFC500,extended,0000082C // Press R2`,
+        },
+        {
+                raw: `// Press Select for active
+D0651F02 0000FFFE // press Select
+205E2FC4 000000XX // map modifier`,
+                pnach: `// Press Select for active
+patch=1,EE,D0651F02,extended,0000FFFE // press Select
+patch=1,EE,205E2FC4,extended,000000XX // map modifier`
         }
 ]
 

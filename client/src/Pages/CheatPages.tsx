@@ -25,6 +25,8 @@ function CheatPagesFree({ dataPosition }: typeProp) {
 
                 <CheatPage.code CheatCodeRaw={CheatCodeFree[dataArrayPosition].raw} CheatCodePnach={CheatCodeFree[dataArrayPosition].pnach} />
 
+                <CheatPage.listModifier position={dataArrayPosition} />
+
                 <CheatPage.yt position={dataArrayPosition} />
 
                 <CheatPage.warning position={dataArrayPosition} />

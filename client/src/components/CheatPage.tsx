@@ -31,6 +31,10 @@ type code = {
     CheatCodePnach: string,
 };
 
+type listModifier = {
+    position: number
+};
+
 type typeyt = {
     position: number
 };
@@ -128,6 +132,21 @@ CheatPage.code = ({ CheatCodeRaw, CheatCodePnach }: code) => {
                 </Tabs>
             </div>
         </>
+    )
+};
+
+
+CheatPage.listModifier = ({ position }: listModifier) => {
+    const { listModifier } = DataListFree_simple(position);
+    console.log(listModifier?.content);
+    return (
+        <div className={`${listModifier?.content == undefined ? 'hidden' : 'mt-20'}`}>
+            <h1 className='text-xl font-bold tracking-wider mb-3 font-Taylor'>{listModifier?.title}</h1>
+            {/* <div className={`bg-slate-600/50 rounded w-full h-full border-white/30 ${listModifier?.content == undefined ? 'border-none p-0' : 'border-2'}`}> */}
+            {/* <pre className='overflow-auto text-nowrap font-JetBrain selection:bg-emerald-700'>{listModifier?.content}</pre> */}
+            <iframe src={listModifier?.content} className={`bg-slate-600/50 rounded w-full h-96 border-white/30 ${listModifier?.content == undefined ? 'border-none p-0' : 'border-2'}`}></iframe>
+            {/* </div> */}
+        </div >
     )
 };
 

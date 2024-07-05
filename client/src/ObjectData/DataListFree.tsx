@@ -1,3 +1,26 @@
+import axios from "axios";
+
+const fetchPnach = () => {
+    return new Promise((resolve, reject) => {
+        axios.get(`/plainText/list-map-modifier.txt`, { responseType: "text" })
+            .then(res => { resolve(res.data) })
+            .catch(err => reject(err))
+    })
+
+
+};
+
+const FINALLY = async () => {
+    try {
+        const x = await fetchPnach();
+        console.log(x);  // This should display the plain text
+        return x;
+    } catch (err) {
+        console.error("Error in FINALLY:", err);
+    }
+};
+
+
 const DataListFree = [
     {
         title: "Exp 9999+, health and energy bar max + infinite ",
@@ -398,7 +421,6 @@ const DataListFree = [
         ],
     },
     {
-
         title: 'Save Anywhere',
         dateAdd: '29 Jun 2024',
         navigate: "/free/23",
@@ -415,6 +437,28 @@ const DataListFree = [
             { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
         ],
     },
+    {
+        title: 'Map Modifier / Teleport',
+        dateAdd: '05 Jul 2024',
+        navigate: "/free/24",
+        deskripsi: [
+            { text: 'pada halaman ini saya membagikan cheat code yg menarik. cheat ini terdapat:' },
+        ],
+        cheatList: [
+            { li_title: 'map modifier', li_Desc: "edit start map dengan map lain" },
+        ],
+        listModifier: {
+            title: "List Modifier code:", content: `/plainText/list-map-modifier.txt`
+        }
+        ,
+        ytvideo: [
+            { url: "https://youtu.be/kZXEt2g2MX4" },
+            { url: "https://youtu.be/bm2s4urvRak" },
+        ],
+        warning: [
+            { text: "berikan sumber jika share cheat dari web ini (tidak harus, asal jangan claim bikinan sendiri)" },
+        ],
+    },
 ];
 
 const DataListFree_simple = (position: number) => {
@@ -426,6 +470,7 @@ const DataListFree_simple = (position: number) => {
         cheatList: DataListFree[position].cheatList,
         ytlink: DataListFree[position].ytvideo,
         warning: DataListFree[position].warning,
+        listModifier: DataListFree[position].listModifier
     }
 }
 

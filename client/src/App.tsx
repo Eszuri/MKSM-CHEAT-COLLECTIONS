@@ -54,7 +54,7 @@ export default function App() {
         <Route path="/free/21" element={<CheatPagesFree dataPosition={20} />} />
         <Route path="/free/22" element={<CheatPagesFree dataPosition={21} />} />
         <Route path="/free/23" element={<CheatPagesFree dataPosition={22} />} />
-
+        <Route path="/free/24" element={<CheatPagesFree dataPosition={23} />} />
 
         {/* route premium */}
         {/* <Route path="/premium/1" element={<CheatPagesFree dataPosition={20} RawCode={CheatCode.Free.raw_21} PnachCode={CheatCode.Free.pnach_21} />} /> */}
