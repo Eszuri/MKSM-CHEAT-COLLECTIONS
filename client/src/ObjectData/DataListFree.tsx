@@ -1,24 +1,22 @@
-import axios from "axios";
+// import axios from "axios";
 
-const fetchPnach = () => {
-    return new Promise((resolve, reject) => {
-        axios.get(`/plainText/list-map-modifier.txt`, { responseType: "text" })
-            .then(res => { resolve(res.data) })
-            .catch(err => reject(err))
-    })
+// const fetchPnach = () => {
+//     return new Promise((resolve, reject) => {
+//         axios.get(`/plainText/list-map-modifier.txt`, { responseType: "text" })
+//             .then(res => { resolve(res.data) })
+//             .catch(err => reject(err))
+//     })
+// };
 
-
-};
-
-const FINALLY = async () => {
-    try {
-        const x = await fetchPnach();
-        console.log(x);  // This should display the plain text
-        return x;
-    } catch (err) {
-        console.error("Error in FINALLY:", err);
-    }
-};
+// const FINALLY = async () => {
+//     try {
+//         const x = await fetchPnach();
+//         console.log(x);  // This should display the plain text
+//         return x;
+//     } catch (err) {
+//         console.error("Error in FINALLY:", err);
+//     }
+// };
 
 
 const DataListFree = [
