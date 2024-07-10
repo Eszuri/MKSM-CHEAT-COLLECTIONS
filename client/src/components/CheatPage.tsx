@@ -35,6 +35,11 @@ type listModifier = {
     position: number
 };
 
+type listModifierArray = {
+    title: string,
+    content: string | null
+};
+
 type typeyt = {
     position: number
 };
@@ -137,16 +142,39 @@ CheatPage.code = ({ CheatCodeRaw, CheatCodePnach }: code) => {
 
 
 CheatPage.listModifier = ({ position }: listModifier) => {
+    const [data, setData] = useState<listModifierArray[]>([]);
     const { listModifier } = DataListFree_simple(position);
-    console.log(listModifier?.content);
+    const { fetchAgain } = userGlobal()
+
+    // Effect untuk memanggil fetchAllData saat komponen dimuat
+    const fetchData = async () => {
+        try {
+            const resolvedData = await Promise.all(
+                listModifier.map(async (item) => ({
+                    title: item.title,
+                    content: await item.content
+                }))
+            );
+            setData(resolvedData.filter(item => item.content !== null));
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    };
+
+    useEffect(() => {
+        fetchData();
+    }, [fetchAgain]);
     return (
-        <div className={`${listModifier?.content == undefined ? 'hidden' : 'mt-20'}`}>
-            <h1 className='text-xl font-bold tracking-wider mb-3 font-Taylor'>{listModifier?.title}</h1>
-            {/* <div className={`bg-slate-600/50 rounded w-full h-full border-white/30 ${listModifier?.content == undefined ? 'border-none p-0' : 'border-2'}`}> */}
-            {/* <pre className='overflow-auto text-nowrap font-JetBrain selection:bg-emerald-700'>{listModifier?.content}</pre> */}
-            <iframe src={listModifier?.content} className={`bg-slate-600/50 rounded w-full h-96 border-white/30 ${listModifier?.content == undefined ? 'border-none p-0' : 'border-2'}`}></iframe>
-            {/* </div> */}
-        </div >
+
+
+        data.map((item, index) => (
+            <div className={`${item.content === '' ? 'hidden' : 'mt-20'}`} key={index}>
+                <h1 className='text-xl font-bold tracking-wider mb-3 font-Taylor'>{item.title}</h1>
+                <div className={`bg-slate-700/50 rounded w-full h-full border-white/30 border-2 p-1`}>
+                    <pre className='overflow-auto text-nowrap font-JetBrain selection:bg-emerald-700'>{item.content}</pre>
+                </div>
+            </div >
+        ))
     )
 };
 

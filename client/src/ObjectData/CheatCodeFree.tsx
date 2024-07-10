@@ -568,6 +568,310 @@ D0651F02 0000FFFE // press Select
                 pnach: `// Press Select for active
 patch=1,EE,D0651F02,extended,0000FFFE // press Select
 patch=1,EE,205E2FC4,extended,000000XX // map modifier`
+        },
+        {
+                raw: `20C47700 = Continue
+20C47780 = Options
+20C47880 = Exit Game
+20C66E80 = x Select  △ Exit ↑/↓ Navigate
+
+--- isi dari Options/Debug Menu ---
+20C46A00 = Reload Level
+20C47380 = Map Select
+20C47500 = Save Menu
+20C6DA00 = God Mode On
+20C6DA80 = God Mode Off
+20C6D700 = P1 Fatality Level
+20C6D780 = P2 Fatality Level
+20C47800 = Warp Player
+
+--- isi dari Exit Game ---
+20C47900 = Exit Game? All Progress Will Be Lost.
+20C48900 = Yes
+20C48980 = No`,
+                pnach: `// Continue -> Lanjutkan
+patch=1,EE,20C47700,byte,4C // L
+patch=1,EE,20C47701,byte,61 // a
+patch=1,EE,20C47702,byte,6E // n
+patch=1,EE,20C47703,byte,6A // j
+patch=1,EE,20C47704,byte,75 // u
+patch=1,EE,20C47705,byte,74 // t
+patch=1,EE,20C47706,byte,6B // k
+patch=1,EE,20C47707,byte,61 // a
+patch=1,EE,20C47708,byte,6E // n
+
+// Options -> Buka Menu Cheat
+patch=1,EE,20C47780,byte,42 // B
+patch=1,EE,20C47781,byte,75 // u
+patch=1,EE,20C47782,byte,6B // k
+patch=1,EE,20C47783,byte,61 // a
+patch=1,EE,20C47784,byte,20 // spasi
+patch=1,EE,20C47785,byte,4D // M
+patch=1,EE,20C47786,byte,65 // e
+patch=1,EE,20C47787,byte,6E // n
+patch=1,EE,20C47788,byte,75 // u
+patch=1,EE,20C47789,byte,20 // spasi
+patch=1,EE,20C4778A,byte,43 // C
+patch=1,EE,20C4778B,byte,68 // h
+patch=1,EE,20C4778C,byte,65 // e
+patch=1,EE,20C4778D,byte,61 // a
+patch=1,EE,20C4778E,byte,74 // t
+
+// Exit Menu -> Keluar Dari Game
+patch=1,EE,20C47880,byte,4B // K
+patch=1,EE,20C47881,byte,65 // e
+patch=1,EE,20C47882,byte,6C // l
+patch=1,EE,20C47883,byte,75 // u
+patch=1,EE,20C47884,byte,61 // a
+patch=1,EE,20C47885,byte,72 // r
+patch=1,EE,20C47886,byte,20 // spasi
+patch=1,EE,20C47887,byte,44 // D
+patch=1,EE,20C47888,byte,61 // a
+patch=1,EE,20C47889,byte,72 // r
+patch=1,EE,20C4788A,byte,69 // i
+patch=1,EE,20C4788B,byte,20 // spasi
+patch=1,EE,20C4788C,byte,47 // G
+patch=1,EE,20C4788D,byte,61 // a
+patch=1,EE,20C4788E,byte,6D // m
+patch=1,EE,20C4788F,byte,65 // e
+
+// Reload Level -> Muat Ulang Map ini
+patch=1,EE,20C46A00,byte,4D // M
+patch=1,EE,20C46A01,byte,75 // u
+patch=1,EE,20C46A02,byte,61 // a
+patch=1,EE,20C46A03,byte,74 // t
+patch=1,EE,20C46A04,byte,20 // spasi
+patch=1,EE,20C46A05,byte,75 // u
+patch=1,EE,20C46A06,byte,6C // l
+patch=1,EE,20C46A07,byte,61 // a
+patch=1,EE,20C46A08,byte,6E // n
+patch=1,EE,20C46A09,byte,67 // g
+patch=1,EE,20C46A0A,byte,20 // spasi
+patch=1,EE,20C46A0B,byte,6D // m
+patch=1,EE,20C46A0C,byte,61 // a
+patch=1,EE,20C46A0D,byte,70 // p
+patch=1,EE,20C46A0E,byte,20 // spasi
+patch=1,EE,20C46A0F,byte,69 // i
+patch=1,EE,20C46A10,byte,6E // n
+patch=1,EE,20C46A11,byte,69 // i
+
+// Map Select -> Pindah Map
+patch=1,EE,20C47380,byte,50 // P
+patch=1,EE,20C47381,byte,69 // i
+patch=1,EE,20C47382,byte,6E // n
+patch=1,EE,20C47383,byte,64 // d
+patch=1,EE,20C47384,byte,61 // a
+patch=1,EE,20C47385,byte,68 // h
+patch=1,EE,20C47386,byte,20 // spasi
+patch=1,EE,20C47387,byte,6D // m
+patch=1,EE,20C47388,byte,61 // a
+patch=1,EE,20C47389,byte,70 // p
+
+// Save game -> Simpan game
+patch=1,EE,20C47500,byte,53 // S
+patch=1,EE,20C47501,byte,69 // i
+patch=1,EE,20C47502,byte,6D // m
+patch=1,EE,20C47503,byte,70 // p
+patch=1,EE,20C47504,byte,61 // a
+patch=1,EE,20C47505,byte,6E // n
+patch=1,EE,20C47506,byte,20 // spasi
+patch=1,EE,20C47507,byte,67 // g
+patch=1,EE,20C47508,byte,61 // a
+patch=1,EE,20C47509,byte,6D // m
+patch=1,EE,20C4750A,byte,65 // e
+
+// God Mode On -> Aktifkan God Mode
+patch=1,EE,20C6DA00,byte,41 // A
+patch=1,EE,20C6DA01,byte,6B // k
+patch=1,EE,20C6DA02,byte,74 // t
+patch=1,EE,20C6DA03,byte,69 // i
+patch=1,EE,20C6DA04,byte,66 // f
+patch=1,EE,20C6DA05,byte,6B // k
+patch=1,EE,20C6DA06,byte,61 // a
+patch=1,EE,20C6DA07,byte,6E // n
+patch=1,EE,20C6DA08,byte,20 // spasi
+patch=1,EE,20C6DA09,byte,67 // g
+patch=1,EE,20C6DA0A,byte,6F // o
+patch=1,EE,20C6DA0B,byte,64 // d
+patch=1,EE,20C6DA0C,byte,20 // spasi
+patch=1,EE,20C6DA0D,byte,6D // m
+patch=1,EE,20C6DA0E,byte,6F // o
+patch=1,EE,20C6DA0F,byte,64 // d
+patch=1,EE,20C6DA10,byte,65 // e
+
+// God Mode Off -> Matikan God Mode
+patch=1,EE,20C6DA80,byte,4D // M
+patch=1,EE,20C6DA81,byte,61 // a
+patch=1,EE,20C6DA82,byte,74 // t
+patch=1,EE,20C6DA83,byte,69 // i
+patch=1,EE,20C6DA84,byte,6B // k
+patch=1,EE,20C6DA85,byte,61 // a
+patch=1,EE,20C6DA86,byte,6E // n
+patch=1,EE,20C6DA87,byte,20 // spasi
+patch=1,EE,20C6DA88,byte,67 // g
+patch=1,EE,20C6DA89,byte,6F // o
+patch=1,EE,20C6DA8A,byte,64 // d
+patch=1,EE,20C6DA8B,byte,20 // spasi
+patch=1,EE,20C6DA8C,byte,6D // m
+patch=1,EE,20C6DA8D,byte,6F // o
+patch=1,EE,20C6DA8E,byte,64 // d
+patch=1,EE,20C6DA8F,byte,65 // e
+
+// P1 Fatality Level -> Fatality Level Player 1
+patch=1,EE,20C6D700,byte,46 // F
+patch=1,EE,20C6D701,byte,61 // a
+patch=1,EE,20C6D702,byte,74 // t
+patch=1,EE,20C6D703,byte,61 // a
+patch=1,EE,20C6D704,byte,6C // l
+patch=1,EE,20C6D705,byte,69 // i
+patch=1,EE,20C6D706,byte,74 // t
+patch=1,EE,20C6D707,byte,79 // y
+patch=1,EE,20C6D708,byte,20 // spasi
+patch=1,EE,20C6D709,byte,6C // l
+patch=1,EE,20C6D70A,byte,65 // e
+patch=1,EE,20C6D70B,byte,76 // v
+patch=1,EE,20C6D70C,byte,65 // e
+patch=1,EE,20C6D70D,byte,6C // l
+patch=1,EE,20C6D70E,byte,20 // spasi
+patch=1,EE,20C6D70F,byte,70 // p
+patch=1,EE,20C6D710,byte,6C // l
+patch=1,EE,20C6D711,byte,61 // a
+patch=1,EE,20C6D712,byte,79 // y
+patch=1,EE,20C6D713,byte,65 // e
+patch=1,EE,20C6D714,byte,72 // r
+patch=1,EE,20C6D715,byte,20 // spasi
+patch=1,EE,20C6D716,byte,31 // 1
+
+// P2 Fatality Level -> Fatality Level Player 2
+patch=1,EE,20C6D780,byte,46 // F
+patch=1,EE,20C6D781,byte,61 // a
+patch=1,EE,20C6D782,byte,74 // t
+patch=1,EE,20C6D783,byte,61 // a
+patch=1,EE,20C6D784,byte,6C // l
+patch=1,EE,20C6D785,byte,69 // i
+patch=1,EE,20C6D786,byte,74 // t
+patch=1,EE,20C6D787,byte,79 // y
+patch=1,EE,20C6D788,byte,20 // spasi
+patch=1,EE,20C6D789,byte,6C // l
+patch=1,EE,20C6D78A,byte,65 // e
+patch=1,EE,20C6D78B,byte,76 // v
+patch=1,EE,20C6D78C,byte,65 // e
+patch=1,EE,20C6D78D,byte,6C // l
+patch=1,EE,20C6D78E,byte,20 // spasi
+patch=1,EE,20C6D78F,byte,70 // p
+patch=1,EE,20C6D790,byte,6C // l
+patch=1,EE,20C6D791,byte,61 // a
+patch=1,EE,20C6D792,byte,79 // y
+patch=1,EE,20C6D793,byte,65 // e
+patch=1,EE,20C6D794,byte,72 // r
+patch=1,EE,20C6D795,byte,20 // spasi
+patch=1,EE,20C6D796,byte,32 // 2
+
+// Warp Player -> Pindah Posisi
+patch=1,EE,20C47800,byte,50 // P
+patch=1,EE,20C47801,byte,69 // i
+patch=1,EE,20C47802,byte,6E // n
+patch=1,EE,20C47803,byte,64 // d
+patch=1,EE,20C47804,byte,61 // a
+patch=1,EE,20C47805,byte,68 // h
+patch=1,EE,20C47806,byte,20 // spasi
+patch=1,EE,20C47807,byte,70 // p
+patch=1,EE,20C47808,byte,6F // o
+patch=1,EE,20C47809,byte,73 // s
+patch=1,EE,20C4780A,byte,69 // i
+patch=1,EE,20C4780B,byte,73 // s
+patch=1,EE,20C4780C,byte,69 // i
+
+// Exit Game? All Progress Will Be Lost. -> Keluar game? data tidak akan tersimpan!
+patch=1,EE,20C47900,byte,4B // K
+patch=1,EE,20C47901,byte,65 // e
+patch=1,EE,20C47902,byte,6C // l
+patch=1,EE,20C47903,byte,75 // u
+patch=1,EE,20C47904,byte,61 // a
+patch=1,EE,20C47905,byte,72 // r
+patch=1,EE,20C47906,byte,20 // spasi
+patch=1,EE,20C47907,byte,67 // g
+patch=1,EE,20C47908,byte,61 // a
+patch=1,EE,20C47909,byte,6D // m
+patch=1,EE,20C4790A,byte,65 // e
+patch=1,EE,20C4790B,byte,3F // ?
+patch=1,EE,20C4790C,byte,0A // pindah baris
+patch=1,EE,20C4790D,byte,64 // d
+patch=1,EE,20C4790E,byte,61 // a
+patch=1,EE,20C4790F,byte,74 // t
+patch=1,EE,20C47910,byte,61 // a
+patch=1,EE,20C47911,byte,20 // spasi
+patch=1,EE,20C47912,byte,74 // t
+patch=1,EE,20C47913,byte,69 // i
+patch=1,EE,20C47914,byte,64 // d
+patch=1,EE,20C47915,byte,61 // a
+patch=1,EE,20C47916,byte,6B // k
+patch=1,EE,20C47917,byte,20 // spasi
+patch=1,EE,20C47918,byte,61 // a
+patch=1,EE,20C47919,byte,6B // k
+patch=1,EE,20C4791A,byte,61 // a
+patch=1,EE,20C4791B,byte,6E // n 
+patch=1,EE,20C4791C,byte,20 // spasi
+patch=1,EE,20C4791D,byte,74 // t
+patch=1,EE,20C4791E,byte,65 // e
+patch=1,EE,20C4791F,byte,72 // r
+patch=1,EE,20C47920,byte,73 // s
+patch=1,EE,20C47921,byte,69 // i
+patch=1,EE,20C47922,byte,6D // m
+patch=1,EE,20C47923,byte,70 // p
+patch=1,EE,20C47924,byte,61 // a
+patch=1,EE,20C47925,byte,6E // n
+patch=1,EE,20C47926,byte,21 // !
+
+// x Select  △ Exit ↑/↓ Navigate -> x Konfirmasi  △ Keluar ↑/↓ Navigasi
+patch=1,EE,20C66E80,byte,3D // icon x (jangan diganti)
+patch=1,EE,20C66E81,byte,4B // K
+patch=1,EE,20C66E82,byte,6F // o
+patch=1,EE,20C66E83,byte,6E // n
+patch=1,EE,20C66E84,byte,66 // f
+patch=1,EE,20C66E85,byte,69 // i
+patch=1,EE,20C66E86,byte,72 // r
+patch=1,EE,20C66E87,byte,6D // m
+patch=1,EE,20C66E88,byte,61 // a
+patch=1,EE,20C66E89,byte,73 // s
+patch=1,EE,20C66E8A,byte,69 // i
+patch=1,EE,20C66E8B,byte,20 // spasi
+patch=1,EE,20C66E8C,byte,20 // spasi
+patch=1,EE,20C66E8D,byte,7E // icon △ (jangan diganti)
+patch=1,EE,20C66E8E,byte,4B // k
+patch=1,EE,20C66E8F,byte,65 // e
+patch=1,EE,20C66E90,byte,6C // l
+patch=1,EE,20C66E91,byte,75 // u
+patch=1,EE,20C66E92,byte,61 // a
+patch=1,EE,20C66E93,byte,72 // r
+patch=1,EE,20C66E94,byte,20 // spasi
+patch=1,EE,20C66E95,byte,20 // spasi
+patch=1,EE,20C66E96,byte,7B // icon ↑ (jangan diganti)
+patch=1,EE,20C66E97,byte,2F // icon / (jangan diganti)
+patch=1,EE,20C66E98,byte,7D // icon ↓ (jangan diganti)
+patch=1,EE,20C66E99,byte,4E // n
+patch=1,EE,20C66E9A,byte,61 // a
+patch=1,EE,20C66E9B,byte,76 // v
+patch=1,EE,20C66E9C,byte,69 // i
+patch=1,EE,20C66E9D,byte,67 // g
+patch=1,EE,20C66E9E,byte,61 // a
+patch=1,EE,20C66E9F,byte,73 // s
+patch=1,EE,20C66EA0,byte,69 // i
+
+// Yes -> Yakin
+patch=1,EE,20C48900,byte,59 // Y
+patch=1,EE,20C48901,byte,61 // a
+patch=1,EE,20C48902,byte,6B // k
+patch=1,EE,20C48903,byte,69 // i
+patch=1,EE,20C48904,byte,6E // n
+
+// No -> Nggak
+patch=1,EE,20C48980,byte,4E // N
+patch=1,EE,20C48981,byte,67 // g
+patch=1,EE,20C48982,byte,67 // g
+patch=1,EE,20C48983,byte,61 // a
+patch=1,EE,20C48984,byte,6B // k
+                `
         }
 ]
 
