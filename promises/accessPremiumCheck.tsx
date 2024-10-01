@@ -18,7 +18,11 @@ export default async function accessPremiumCheck(token: number) {
         }
 
         if (checkProfile.token == token) {
-            return {oke: true};
+            if (Date.now() < checkProfile.expiresToken) {
+                return {oke: true};
+            } else {
+                return {expires: true}
+            }
         } else {
             return {tokenIncorrect: true};
         }

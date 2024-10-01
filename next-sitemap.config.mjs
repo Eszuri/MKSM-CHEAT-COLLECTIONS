@@ -6,7 +6,6 @@ const NEXT_SSG_FILES = [
     '/*.js',
 ];
 
-/** @type {import('next-sitemap').IConfig} */
 const config = {
     siteUrl: 'https://mksm-cheat-collections.vercel.app',
     generateRobotsTxt: true,
@@ -22,7 +21,7 @@ const config = {
     },
     transform: async (config, path) => {
         console.log('Generating sitemap for:', path); // Debugging log
-        
+
         // Set priority dan frekuensi perubahan sesuai rute
         const isHomePage = path === '/';
         return {
@@ -33,5 +32,4 @@ const config = {
         };
     },
 };
-
 export default config;
